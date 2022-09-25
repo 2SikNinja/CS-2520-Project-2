@@ -35,3 +35,30 @@
 
 # userInput = input("Please enter the word so I can find out how many characters are in word!: ")
 # print(get_acronym(userInput))
+
+def get_safe(plainText, cipherText):
+    alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    plainTextList = []
+    keyList = []
+    plainTextWord = plainText
+    cipherKey = cipherText
+    encryption = ''
+    l = 0
+    for i in plainTextWord:
+        plainTextList.append(i)
+    for j in cipherKey:
+        keyList.append(j)
+    print(plainTextList)
+    print(keyList)
+    for k in range(len(keyList)):
+        for o in range(len(plainTextList)):
+            if keyList[l] == plainTextList[o]:
+                encryption += keyList[l]
+            else:
+                continue
+        l+=1
+    return encryption
+
+firstInput = input("Input the plain text you would like to encrypt: ")
+cipherText = input("Input the key: ")
+print(get_safe(firstInput, cipherText))
