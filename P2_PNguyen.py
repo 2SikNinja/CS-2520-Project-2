@@ -40,25 +40,26 @@ def get_safe(plainText, cipherText):
     alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     plainTextList = []
     keyList = []
-    plainTextWord = plainText
+    plainTextWord = plainText.lower()
     cipherKey = cipherText
     encryption = ''
-    l = 0
+    
+    #creates character lists from the inputs
     for i in plainTextWord:
         plainTextList.append(i)
     for j in cipherKey:
         keyList.append(j)
-    print(plainTextList)
-    print(keyList)
-    for k in range(len(keyList)):
-        for o in range(len(plainTextList)):
-            if keyList[l] == plainTextList[o]:
-                encryption += keyList[l]
+    
+    #first iterates through the plain text's first letter then onto the alphabet where it goes through each letter then matches it to the keyList or second input from the user
+    for k in range(len(plainTextList)):
+        for o in range(len(alphabet)):
+            if plainTextList[k] == alphabet[o]:
+                encryption += keyList[o]
             else:
                 continue
-        l+=1
     return encryption
+
 
 firstInput = input("Input the plain text you would like to encrypt: ")
 cipherText = input("Input the key: ")
-print(get_safe(firstInput, cipherText))
+print("The encrypted message is " + get_safe(firstInput, cipherText))
