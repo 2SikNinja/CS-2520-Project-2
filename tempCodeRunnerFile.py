@@ -1,1 +1,1 @@
-  # newWord = word.replace("\t","")
+y = int(input("How many prime numbers would you like to generate?: "))
