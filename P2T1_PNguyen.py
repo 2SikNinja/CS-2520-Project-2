@@ -63,3 +63,32 @@ def main():
     print("Ecrypting " + get_acronym(acronymInput) + " with " + cipherText + " is: " + get_safe(firstInput,cipherText))
     
 main()
+
+
+# Output
+# Enter a sentence or phrase: The only thing we have to fear is fear itself
+# You entered: The only thing we have to fear is fear itself
+# Number of characters within the sentence is: 45
+# String with no whitespace: Theonlythingwehavetofearisfearitself
+# Enter a phrase to generate an acronym: random access memory
+# The acronym is: RAM
+# Please enter a 26 long alphabet with no spaces to encrypt your acronym with: bpzhgocvjdqswkimlutneryaxf 
+# Ecrypting RAM with bpzhgocvjdqswkimlutneryaxf is: ubw
+
+# Enter a sentence or phrase: Hey I'm Peter
+# You entered: Hey I'm Peter
+# Number of characters within the sentence is: 13
+# String with no whitespace: HeyI'mPeter
+# Enter a phrase to generate an acronym: I got to Cal Poly Pomona
+# The acronym is: IGTCPP
+# Please enter a 26 long alphabet with no spaces to encrypt your acronym with: bpzhgocvjdqswkimlutneryaxf
+# Ecrypting IGTCPP with bpzhgocvjdqswkimlutneryaxf is: jcnzmm
+
+# Enter a sentence or phrase: I take CS2560 with Professor Yang
+# You entered: I take CS2560 with Professor Yang
+# Number of characters within the sentence is: 33
+# String with no whitespace: ItakeCS2560withProfessorYang
+# Enter a phrase to generate an acronym: I love this class
+# The acronym is: ILTC
+# Please enter a 26 long alphabet with no spaces to encrypt your acronym with: bpzhgocvjdqswkimlutneryaxf
+# Ecrypting ILTC with bpzhgocvjdqswkimlutneryaxf is: jsnz
