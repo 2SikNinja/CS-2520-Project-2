@@ -23,7 +23,7 @@ def primeGenerator(userInputForPrimes):
         bool=False
         k+=1
         
-def prime10000Generator(userInputForPrimes):
+def prime1000Generator(userInputForPrimes):
     userInputForPrime = userInputForPrimes
     bool = False
     k=2
@@ -47,7 +47,7 @@ def main():
     x = primeGenerator(100)
     for i in range(100):
         print(str(i+1) + ": " + str(next(x)))
-    y = prime10000Generator(1100)
+    y = prime1000Generator(1100)
     for j in range(1101):
         if j == 101 or j == 1100:
             print(str(j) + ": " + str(next(y)))
