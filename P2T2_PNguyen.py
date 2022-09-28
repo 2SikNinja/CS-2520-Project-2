@@ -3,7 +3,6 @@
 #Completed (or last revision): 10/11/2022
 
 import time
-import turtle
 
 def primeGenerator(userInputForPrimes):
     userInputForPrime = userInputForPrimes
