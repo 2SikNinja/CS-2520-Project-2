@@ -4,6 +4,7 @@
 
 import time
 
+
 def primeGenerator(userInputForPrimes):
     userInputForPrime = userInputForPrimes
     bool = False
@@ -22,35 +23,16 @@ def primeGenerator(userInputForPrimes):
             count+=1
         bool=False
         k+=1
-        
-def prime1000Generator(userInputForPrimes):
-    userInputForPrime = userInputForPrimes
-    bool = False
-    k=2
-    count = 1
-    while(count <= userInputForPrime):
-        if k > 1:
-            for i in range(2, k):
-                if (k % i) == 0:
-                    bool = True
-                    break
-        if bool:
-            pass
-        else:
-            if(count == 101 or count == 1100):
-                yield k
-            count+=1
-        bool=False
-        k+=1
 
 def main():
-    x = primeGenerator(100)
+    x = primeGenerator(1200)
     for i in range(100):
         print(str(i+1) + ": " + str(next(x)))
-    y = prime1000Generator(1100)
-    for j in range(1101):
-        if j == 101 or j == 1100:
-            print(str(j) + ": " + str(next(y)))
+    for j in range(1000):
+        i+=1
+        if j == 0 or j == 999:
+            print(str(i+1) + ": " + str(next(x)))
+        next(x)
 startTime = time.time()
 main()
 finalTime = (time.time() - startTime)
@@ -158,5 +140,5 @@ print("Execution time is = " + str(finalTime) + " seconds")
 # 99: 523
 # 100: 541
 # 101: 547
-# 1100: 8831
+# 1100: 8837
 # Execution time is = 0.13602447509765625 seconds
