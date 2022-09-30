@@ -24,11 +24,13 @@ def primeGenerator(userInputForPrimes):
         bool=False
         k+=1
 
+
+
 def main():
-    x = primeGenerator(1200)
+    x = primeGenerator(1200)  #Task 1
     for i in range(100):
         print(str(i+1) + ": " + str(next(x)))
-    for j in range(1000):
+    for j in range(1000):   #Task 2
         i+=1
         if j == 0 or j == 999:
             print(str(i+1) + ": " + str(next(x)))
