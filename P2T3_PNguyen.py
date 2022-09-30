@@ -4,6 +4,7 @@
 
 import digitprint
 
+
 def zipCodeReader(zipCode):
     userInput = zipCode
     userInput = userInput.replace('-',"")
@@ -20,7 +21,7 @@ def checkSum(zipCode):
 
 def main():
     userInput = input("Please enter a zip code: ")
-    checkSum(zipCodeReader(userInput))
+    print("The checksum is: " + checkSum(zipCodeReader(userInput)))
     digitprint.digitPrint(zipCodeReader(userInput)+checkSum(zipCodeReader(userInput)))
     
 main()

@@ -1,3 +1,1 @@
-
-# def main():
-    
+newWords = newWords.replace('\\t',"")
