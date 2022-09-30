@@ -1,5 +1,5 @@
 #Authors: Peter Nguyen
-#Assignment: Lab #4
+#Assignment: Project #2
 #Completed (or last revision): 10/11/2022
 
 import time
