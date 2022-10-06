@@ -30,11 +30,13 @@ def main():
     x = primeGenerator(1200)  #Task 1
     for i in range(100):
         print(str(i+1) + ": " + str(next(x)))
-    for j in range(1000):   #Task 2
-        i+=1
-        if j == 0 or j == 999:
-            print(str(i+1) + ": " + str(next(x)))
-        next(x)
+    userInput = input("Would you like to generate 1000 more numbers?  Y/N: ")    
+    if userInput == "Y" or userInput == "y":
+        for j in range(1000):   #Task 2
+            i+=1
+            if j == 0 or j == 999:
+                print(str(i+1) + ": " + str(next(x)))
+            next(x)
 startTime = time.time()
 main()
 finalTime = (time.time() - startTime)
@@ -141,6 +143,7 @@ print("Execution time is = " + str(finalTime) + " seconds")
 # 98: 521
 # 99: 523
 # 100: 541
+# Would you like to generate 1000 more numbers?  Y/N: Y
 # 101: 547
 # 1100: 8837
-# Execution time is = 0.13602447509765625 seconds
+# Execution time is = 1.9528436660766602 seconds
