@@ -34,7 +34,9 @@ def main():
     if userInput == "Y" or userInput == "y":
         for j in range(1000):   #Task 2
             i+=1
-            if j == 0 or j == 999:
+            if j == 998:
+                i+=1
+            if j == 0 or j == 998:
                 print(str(i+1) + ": " + str(next(x)))
             next(x)
 startTime = time.time()
@@ -145,5 +147,5 @@ print("Execution time is = " + str(finalTime) + " seconds")
 # 100: 541
 # Would you like to generate 1000 more numbers?  Y/N: Y
 # 101: 547
-# 1100: 8837
+# 1100: 8831
 # Execution time is = 1.9528436660766602 seconds
